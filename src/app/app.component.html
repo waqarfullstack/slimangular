@@ -1,0 +1,13 @@
+<div class="container">
+	<nav>
+		<a class="btn btn-primary" routerLink="/dashboard"><mat-icon>home</mat-icon></a>
+	</nav>
+	<hr>
+	<div class="row">
+	    <div class="col-md-12">
+	    	<button mat-raised-button color="primary" [routerLink]="['/todo/add']">Add Todo</button>
+	    </div>
+	</div>
+
+   <router-outlet></router-outlet>
+</div>

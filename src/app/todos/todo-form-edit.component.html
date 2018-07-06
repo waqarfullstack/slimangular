@@ -1,0 +1,19 @@
+<div class="row" *ngIf="todo">
+	<h4>Update Todo</h4>
+	<div class="col-md-12">
+		<div>
+			<!-- model to view binding -->
+			<p>Id: <span>{{todo.id}}</span></p>
+		</div>
+		<div>
+			<!-- two way data binding -->
+			<mat-form-field class="example-full-width">
+		    <input matInput placeholder="Todo Item" [(ngModel)]="todo.title" required="required">
+		    </mat-form-field>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<button mat-raised-button color="primary" (click)="onSave()">Save</button>
+  		<button mat-raised-button color="accent" (click)="goBack()">Cancel</button>
+	</div>
+</div>

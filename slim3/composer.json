@@ -1,0 +1,36 @@
+{
+    "name": "Waqar/slim3-angular6-doctrine",
+    "description": "Slim Micro-Framework 3 with Doctrine & Angular6, Twig & Monolog.",
+    "license": "BSD-3-Clause",
+    "type": "project",
+    "keywords": ["Slim-micro-framework", "Doctrine", "Angular6"],
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "authors": [
+        {
+            "name": "Waqar Hussain",
+            "email": "waqar3113@gmail.com",
+            "homepage": "http://www.bemastermind.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src"
+        }
+    },
+    "require": {
+        "php": "^5.6|^7.2",
+        "slim/slim": "^3.0",
+        "slim/twig-view": "^2.0",
+        "slim/flash": "^0.1.0",
+        "monolog/monolog": "^1.13",
+        "doctrine/orm": "2.4",
+        "doctrine/cache": "1.6",
+        "doctrine/dbal": "2.6",
+        "doctrine/annotations": "1.4",
+        "doctrine/common": "2.7.1"
+    }
+}
